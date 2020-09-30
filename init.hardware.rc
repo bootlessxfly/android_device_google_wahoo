@@ -15,6 +15,7 @@
 #
 
 import /vendor/etc/init/hw/init.${ro.hardware}.usb.rc
+import init.maru.rc
 
 on charger
     write /sys/devices/system/cpu/cpu2/online 0
@@ -824,4 +825,3 @@ service ramoops_sh /system/bin/init.ramoops.sh
     group root system
     disabled
     oneshot
-
